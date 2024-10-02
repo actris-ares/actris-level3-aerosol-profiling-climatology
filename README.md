@@ -1,7 +1,9 @@
 # actris-level3-aerosol-profiling-climatology
 
 CODES TO GENERATE LEVEL 3 FILES:
+
 To generate the EARLINET level 3 files run Main.py script which execute, in order manner, the following steps:
+
   1: Generation of a table with the list of level 2 files and their characteristics, using Lev2database.R, Lev2database_layers.R and system.R scripts.
   
   2.1: Construction of tables with profile data, divided by wavelength, using lev3pro_355.R, lev3pro_532.R and lev3pro_1064.R scripts.
