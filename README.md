@@ -1,21 +1,59 @@
 # actris-level3-aerosol-profiling-climatology
 
-CODES TO GENERATE LEVEL 3 FILES:
+Quick Start Guide
 
-To generate the EARLINET level 3 files run Main.py script which execute, in order manner, the following steps:
+Overview
+This guide provides a concise set of instructions to help users set up and run the ACTRIS Level 3 aerosol profiling climatology software. The software processes atmospheric lidar data to generate Level 3 NetCDF files with integrated, profile-based, and layer-resolved statistics.
 
-  1: Generation of a table with the list of level 2 files and their characteristics, using Lev2database.R, Lev2database_layers.R and system.R scripts.
-  
-  2.1: Construction of tables with profile data, divided by wavelength, using lev3pro_355.R, lev3pro_532.R and lev3pro_1064.R scripts.
-  
-  2.2: Generation of netCDF files containing profile data, using lev3pro_nm_files.R, lev3pro_ns_files.R, lev3pro_s_files.R and lev3pro_y_files.R scripts.
-  
-  3.1: Construction of tables with integrated values, divided by type of source Level 2 files (e or b), using lev3int_b.R, lev3int_e.R and lev3int_pbl.R scripts.
-  
-  3.2: Reorganization of the integrated values, dividing them by wavelength, using lev3int_355.R, lev3int_532.R and lev3int_1064.R scripts.
-  
-  3.3: Generation of netCDF files containing profile data, using lev3int_nm_files.R, lev3int_ns_files.R, lev3int_s_files.R and lev3int_y_files.R scripts.
-  
-  4.1: Generation of the table with the values of the layers, using lev3int_layers.R script.
-  
-  4.2: Generation of netCDF files containing the layer values, using lev3layers_nm_files.R, lev3layers_ns_files.R, lev3layers_s_files.R and lev3layers_y_files.R scripts.
+1. Repository and Data
+1.1 Clone the Repository
+Run the following lines of code from the terminal:
+1.	git clone https://github.com/actris-ares/actris-level3-aerosol-profiling-climatology.git
+2.	cd actris-level3-aerosol-profiling-climatology 
+1.2 Download Level 2 Data
+Download Level 2 NetCDF files for the desired stations from the EARLINET Data Portal (https://data.earlinet.org/earlinet/).
+
+2. Folder Structure
+Ensure the following folders exist:
+./New/                    		# Contains Level 2 NetCDF files organized by station
+./Layers/                  		# Contains layer files (one per station)
+./Level3/Profiles/        	# Output: Level 3 profile NetCDFs
+./Level3/Integrated/       	# Output: Level 3 integrated NetCDFs
+./Level3/Layers/           	# Output: Level 3 layer histogram NetCDFs
+
+3. Required Files
+Place the following files in the root directory:
+•	station.csv – Station metadata
+•	Climatol2.log – Log file for climatological filtering
+•	Calipso2.log – Log file for CALIPSO filtering
+
+4. Configuration
+Before running the main script, open Main.R and configure the following variable:
+Release
+Set the time range for processing:
+1.	release <- c(2000, 2021)  # Example: process data from 2000 to 2021
+
+5. Execution
+Run the Main Script
+In an R session or terminal:
+1.	source("Main.R")
+This will execute the full processing pipeline and generate NetCDF files in the appropriate Level3/ subdirectories.
+
+6. System Requirements
+•	Tested OS: Ubuntu Mate 22.04 (Linux).
+•	Recommended OS: All OS on which the R environment is installed.
+•	R Packages Required:
+•	isotone
+•	ncdf4
+•	radiant.data
+•	dplyr
+•	tidyr
+No external dependencies beyond R packages are required.
+
+7. Output
+The following NetCDF files will be generated:
+•	Level3/Profiles/<station>/ – Profile-based statistics
+•	Level3/Integrated/<station>/ – Integrated statistics
+•	Level3/Layers/<station>/ – Layer-resolved histograms
+Each file follows ACTRIS conventions and includes metadata such as time bounds, wavelength, and statistical descriptors.
+
