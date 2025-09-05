@@ -1,7 +1,8 @@
 # ACTRIS Level 3 Aerosol Profiling Climatology
 
 ## Overview
-This guide provides a concise set of instructions to help users set up and run the ACTRIS Level 3 aerosol profiling climatology software. The software processes atmospheric lidar data to generate Level 3 NetCDF files with integrated, profile-based, and layer-resolved statistics.
+This guide provides a concise set of instructions to help users set up and run the ACTRIS Level 3 aerosol profiling climatology software. The software processes atmospheric lidar data to generate Level 3 NetCDF files with integrated, profile-based, and layer-resolved statistics.  
+This software is valid from the 2000–2021 release onwards. For previous releases (2000–2015, 2000–2019), the code used will be published as soon as possible.
 ## Repository and Data
 ### Clone the Repository
 Run the following lines of code from the terminal:
