@@ -11,11 +11,11 @@ cd actris-level3-aerosol-profiling-climatology
 Download Level 2 NetCDF files for the desired stations from the EARLINET Data Portal (https://data.earlinet.org/earlinet/).
 ## Folder Structure
 Ensure the following folders exist:  
-./New/&nbsp;&nbsp;&nbsp;&nbsp; # Contains Level 2 NetCDF files organized by station  
-./Layers/&nbsp;&nbsp;&nbsp;&nbsp; # Contains layer files (one per station)  
-./Level3/Profiles/&nbsp;&nbsp;&nbsp; # Output: Level 3 profile NetCDFs  
-./Level3/Integrated/&nbsp;&nbsp;&nbsp; # Output: Level 3 integrated NetCDFs  
-./Level3/Layers/&nbsp;&nbsp;&nbsp; # Output: Level 3 layer histogram NetCDFs  
+./New/ # Contains Level 2 NetCDF files organized by station  
+./Layers/ # Contains layer files (one per station)  
+./Level3/Profiles/ # Output: Level 3 profile NetCDFs  
+./Level3/Integrated/ # Output: Level 3 integrated NetCDFs  
+./Level3/Layers/ # Output: Level 3 layer histogram NetCDFs  
 ## Required Files
 Place the following files in the root directory:
 station.csv – Station metadata
