@@ -7,7 +7,8 @@ This software is valid from the 2000–2021 release onwards. For previous releas
 ### Clone the Repository
 Run the following lines of code from the terminal:
 1. git clone https://github.com/actris-ares/actris-level3-aerosol-profiling-climatology.git
-2. cd actris-level3-aerosol-profiling-climatology
+2. unzip actris-level3-aerosol-profiling-climatology.zip
+3. cd actris-level3-aerosol-profiling-climatology
 ### Download Level 2 Data
 Download Level 2 NetCDF files for the desired stations from the EARLINET Data Portal (https://data.earlinet.org/earlinet/).
 ## Folder Structure
