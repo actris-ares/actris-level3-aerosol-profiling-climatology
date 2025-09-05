@@ -22,9 +22,9 @@ station.csv – Station metadata
 Climatol2.log – Log file for climatological filtering  
 Calipso2.log – Log file for CALIPSO filtering  
 ## Configuration
-Before running the main script, open Main.R and configure the following variable:
-Release
-Set the time range for processing:
+Before running the main script, open Main.R and configure the following variable:  
+Release  
+Set the time range for processing:  
 release <- c(2000, 2021)  # Example: process data from 2000 to 2021
 ## Execution
 Run the Main Script
