@@ -12,10 +12,10 @@ Download Level 2 NetCDF files for the desired stations from the EARLINET Data Po
 ## Folder Structure
 Ensure the following folders exist:  
 ./New/ # Contains Level 2 NetCDF files organized by station  
-./Layers/ &nbsp;&nbsp;&nbsp;con&nbsp;&nbsp;&nbsp; # Contains layer files (one per station)  
-./Level3/Profiles/ &emsp;&emsp;&emsp;&emsp; # Output: Level 3 profile NetCDFs  
-./Level3/Integrated/ &emsp;&emsp;&emsp;&emsp; # Output: Level 3 integrated NetCDFs  
-./Level3/Layers/ &emsp;&emsp;&emsp;&emsp;&emsp; # Output: Level 3 layer histogram NetCDFs  
+./Layers/ # Contains layer files (one per station)  
+./Level3/Profiles/ # Output: Level 3 profile NetCDFs  
+./Level3/Integrated/ # Output: Level 3 integrated NetCDFs  
+./Level3/Layers/ # Output: Level 3 layer histogram NetCDFs  
 ## Required Files
 Place the following files in the root directory:
 station.csv – Station metadata
