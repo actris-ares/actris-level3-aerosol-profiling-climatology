@@ -25,7 +25,7 @@ Calipso2.log – Log file for CALIPSO filtering
 Before running the main script, open Main.R and configure the following variable:  
 **Release**  
 Set the time range for processing:  
-release <- c(2000, 2021)  # Example: process data from 2000 to 202
+1. release <- c(2000, 2021)  # Example: process data from 2000 to 202
 ## Execution
 Run the Main Script
 In an R session or terminal:
