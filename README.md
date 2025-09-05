@@ -17,10 +17,10 @@ Ensure the following folders exist:
 ./Level3/Integrated/ # Output: Level 3 integrated NetCDFs  
 ./Level3/Layers/ # Output: Level 3 layer histogram NetCDFs  
 ## Required Files
-Place the following files in the root directory:
-station.csv – Station metadata
-Climatol2.log – Log file for climatological filtering
-Calipso2.log – Log file for CALIPSO filtering
+Place the following files in the root directory:  
+station.csv – Station metadata  
+Climatol2.log – Log file for climatological filtering  
+Calipso2.log – Log file for CALIPSO filtering  
 ## Configuration
 Before running the main script, open Main.R and configure the following variable:
 Release
