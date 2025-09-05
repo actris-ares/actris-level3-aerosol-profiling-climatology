@@ -5,8 +5,8 @@ This guide provides a concise set of instructions to help users set up and run t
 ## Repository and Data
 ### Clone the Repository
 Run the following lines of code from the terminal:
-git clone https://github.com/actris-ares/actris-level3-aerosol-profiling-climatology.git
-cd actris-level3-aerosol-profiling-climatology
+1. git clone https://github.com/actris-ares/actris-level3-aerosol-profiling-climatology.git
+2. cd actris-level3-aerosol-profiling-climatology
 ### Download Level 2 Data
 Download Level 2 NetCDF files for the desired stations from the EARLINET Data Portal (https://data.earlinet.org/earlinet/).
 ## Folder Structure
@@ -25,12 +25,15 @@ Calipso2.log – Log file for CALIPSO filtering
 Before running the main script, open Main.R and configure the following variable:  
 
 **Release**  
+
 Set the time range for processing:  
 1. release <- c(2000, 2021)  # Example: process data from 2000 to 202
 ## Execution
-Run the Main Script
-In an R session or terminal:
-source("Main.R")
+**Run the Main Script**
+In an R session or terminal:  
+
+1. source("Main.R")
+
 This will execute the full processing pipeline and generate NetCDF files in the appropriate Level3/ subdirectories.
 ## System Requirements
 Tested OS: Ubuntu Mate 22.04 (Linux).
