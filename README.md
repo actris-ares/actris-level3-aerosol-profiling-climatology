@@ -45,7 +45,7 @@ This will execute the full processing pipeline and generate NetCDF files in the 
 
 - **Recommended OS**: All OS on which the R environment is installed.
 
-- **R Packages Required**:
+**R Packages Required**:
  - isotone  
  - ncdf4  
  - radiant.data  
