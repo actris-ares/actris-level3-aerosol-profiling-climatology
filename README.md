@@ -54,8 +54,10 @@ This will execute the full processing pipeline and generate NetCDF files in the 
 
 No external dependencies beyond R packages are required.
 ## Output
-The following NetCDF files will be generated:
-Level3/Profiles/<station>/ – Profile-based statistics
-Level3/Integrated/<station>/ – Integrated statistics
-Level3/Layers/<station>/ – Layer-resolved histograms
+The following NetCDF files will be generated:  
+
+- Level3/Profiles/<station>/ – Profile-based statistics  
+- Level3/Integrated/<station>/ – Integrated statistics  
+- Level3/Layers/<station>/ – Layer-resolved histograms
+
 Each file follows ACTRIS conventions and includes metadata such as time bounds, wavelength, and statistical descriptors.
