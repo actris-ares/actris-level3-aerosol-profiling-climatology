@@ -41,14 +41,17 @@ In an R session or terminal:
 
 This will execute the full processing pipeline and generate NetCDF files in the appropriate Level3/ subdirectories.
 ## System Requirements
-Tested OS: Ubuntu Mate 22.04 (Linux).
-Recommended OS: All OS on which the R environment is installed.
-R Packages Required:
-isotone
-ncdf4
-radiant.data
-dplyr
-tidyr
+- **Tested OS**: Ubuntu Mate 22.04 (Linux).
+
+- **Recommended OS**: All OS on which the R environment is installed.
+
+- **R Packages Required**:
+- isotone  
+- ncdf4  
+- radiant.data  
+- dplyr  
+- tidyr
+
 No external dependencies beyond R packages are required.
 ## Output
 The following NetCDF files will be generated:
